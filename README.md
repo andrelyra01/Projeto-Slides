@@ -1,2 +1,2 @@
 # Projeto-Slides
- projeto feito com html e css
+ PROJETO FEITO COM HTML E CSS UMA OTIMA OPÇÃO PARA DEMOSTRAR UMA GALERIA DE FOTOS
