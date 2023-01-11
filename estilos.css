@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: vw;
+    background: linear-gradient(72deg, #3debb0 1%, #8956f3 99%);
+}
+
+.content {
+    height: 520px;
+    width: 935px;
+    border-radius: 20px;
+    /*esconde as imagens*/
+    overflow: hidden;
+    position: absolute;
+    /*centralisa o content*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*alinhamento da div*/
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar {
+    /* formatação dos label*/
+    width: 70px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bar:hover {
+    background-color: #fff;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    /* width de 500 porque é 5 img*/
+    width: 500%;
+    height: 100%;
+}
+
+/*div das imagens*/
+.slide {
+    width: 20%;
+    transition: 0.6s;
+}
+
+/* personalisar imagens que esta dentro do slide*/
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+/*movimento das imagens 
+quando estiver checado o s1 vai ter uma margim*/
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+/* a porcentagem tem que ser 100% dividido por 5 imagens*/
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+}
+/* vai diminuindo de 20% para cada slide que vai para esquerda*/
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+}
+
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+}
+
+#slide5:checked ~ .s1 {
+    margin-left: -80%;
+}
